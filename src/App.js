@@ -82,7 +82,7 @@ class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.handleAddContact} />
         <h2>Contacts</h2>
-        {contacts.lenght > 1 && (
+        {contacts.length > 1 && (
           <Filter value={filter} onChange={this.changeFilter} />
         )}
         {contacts.length > 0 ? (
